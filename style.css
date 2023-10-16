@@ -41,7 +41,7 @@ header {
 header h1 {
   text-indent: -999px;
   width: 25%;
-  background: url(public/logo_dark.png) left no-repeat;
+  background: url(assets/logo_dark.png) left no-repeat;
   background-size: contain;
 }
 
