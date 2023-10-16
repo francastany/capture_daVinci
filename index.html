@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Capture Fotografía</title>
     <link rel="icon" type="image/x-icon" href="public/iconoChrome.png" />
-
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -61,7 +64,7 @@
           <li><a href="#sobreNosotros">Nosotros</a></li>
           <li><a href="#galeriaContainer">Galeria</a></li>
           <li><a href="#blog">Blog</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#contacto_titulo">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -77,7 +80,18 @@
           </p>
           <a href="#galeriaContainer">Explorá nuestra galería</a>
         </div>
-        <figure>
+        <figure
+          class="fotorama"
+          data-autoplay="true"
+          data-loop="true"
+          data-arrows="false"
+          data-click="true"
+          data-ratio="600/600"
+          data-maxwidth="100%"
+          data-minheight="400"
+          data-maxheight="100%"
+          data-fit="contain"
+        >
           <picture>
             <source
               media="(max-width: 500px)"
@@ -88,6 +102,17 @@
               srcset="public/tablet/hero_tablet.jpg"
             />
             <img src="public/desktop/hero_desktop.jpg" alt="Hero Image" />
+          </picture>
+          <picture>
+            <source
+              media="(max-width: 500px)"
+              srcset="public/mobile/hero2.jpg"
+            />
+            <source
+              media="(max-width: 768px)"
+              srcset="public/tablet/hero2_tablet.jpg"
+            />
+            <img src="public/desktop/hero2_desktop.jpg" alt="Hero Image" />
           </picture>
         </figure>
       </section>
@@ -376,24 +401,31 @@
           muted
           src="public/mobile/video_contacto.mp4"
         ></video>
-        <h2>Contactanos</h2>
-        <form
+        <h2 id="contacto_titulo">Contactanos</h2>
+        <!-- PRUEBA DE FORM CON ARCHIVO PHP - NO FUNCIONA
+          <form
           id="formulario"
           action="recursos/enviar_formulario.php"
-          method="post"
+          method="POST"
           enctype="application/x-www-form-urlencoded"
+        > -->
+        <form
+          id="formulario"
+          action="https://formsubmit.co/franco.castany@davinci.edu.ar"
+          method="POST"
         >
           <div class="input-container">
-            <label>Nombre y Apellido</label>
+            <label for="nombre">Nombre y Apellido</label>
             <input type="text" name="nombre" placeholder="Nombre" required />
           </div>
           <div class="input-container">
-            <label>Correo electrónico</label>
-            <input type="email" name="mail" placeholder="Email" required />
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="email" placeholder="Email" required />
           </div>
           <div class="input-container">
-            <label>Mensaje</label>
+            <label for="comentario">Mensaje</label>
             <textarea
+              required
               name="comentario"
               placeholder="Mensaje"
               cols="30"
@@ -401,6 +433,13 @@
             ></textarea>
           </div>
           <input type="submit" value="Enviar" />
+
+          <input type="hidden" name="_subject" value="Contacto desde la Web!" />
+          <input
+            type="hidden"
+            name="_next"
+            value="http://127.0.0.1:5500/recursos/enviado.html"
+          />
         </form>
       </section>
     </main>
@@ -457,4 +496,5 @@
 
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 </html>
