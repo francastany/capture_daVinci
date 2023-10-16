@@ -40,7 +40,7 @@ header {
 
 header h1 {
   text-indent: -999px;
-  width: 15%;
+  width: 25%;
   background: url(public/logo_dark.png) left no-repeat;
   background-size: contain;
 }
@@ -258,6 +258,10 @@ nav:target nav {
   text-decoration: underline;
 }
 
+#blog ul li {
+  list-style: none;
+}
+
 .article_title {
   font-size: 22px;
   font-weight: 400;
@@ -391,8 +395,9 @@ footer #redes a svg {
 }
 
 footer p {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 800;
+  text-align: center;
 }
 
 /* ------------------------------------------------------ TABLET ------------------------------------------------------ */
