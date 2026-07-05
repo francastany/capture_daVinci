@@ -10,7 +10,16 @@
       "WebFetch(domain:tailwind-animations.com)",
       "Bash(gh auth *)",
       "Bash(gh repo *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git remote *)",
+      "Bash(git push *)",
+      "Bash(vercel --version)",
+      "Bash(npx --yes vercel --version)",
+      "Bash(npx --yes vercel whoami)",
+      "Bash(npx --yes vercel --prod --yes)",
+      "Bash(npx --yes vercel --prod --yes --name capture-davinci)",
+      "Bash(git commit *)"
     ]
   }
 }
