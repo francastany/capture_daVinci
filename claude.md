@@ -24,3 +24,4 @@
 - Review `index.html` and `style.css` first before making layout changes.
 - Use the current asset names and folder structure instead of renaming files casually.
 - Keep the site dependency-free unless the user explicitly asks for a new library or build step.
+- Do not launch a local server, headless browser, or Playwright/Puppeteer to test pages yourself. The user runs a Live Server (port 5500) and checks visual changes in their own browser every time. Just make the code change and let them verify it.
