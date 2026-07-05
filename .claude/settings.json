@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(run)",
+      "Skill(run:*)",
+      "Bash(curl -sL -o js/lightgallery.min.js https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.umd.min.js)",
+      "Bash(curl -sL -o js/lg-zoom.min.js https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/lg-zoom.umd.min.js)",
+      "Bash(curl -sL -o js/lg-thumbnail.min.js https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/thumbnail/lg-thumbnail.umd.min.js)",
+      "Bash(curl -sL -o css/lightgallery-bundle.min.css https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css)",
+      "WebFetch(domain:tailwind-animations.com)",
+      "Bash(gh auth *)",
+      "Bash(gh repo *)",
+      "Bash(git add *)"
+    ]
+  }
+}

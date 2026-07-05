@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /recursos/enviado.html
+
+Sitemap: https://capture-da-vinci.vercel.app/sitemap.xml
