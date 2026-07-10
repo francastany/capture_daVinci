@@ -10,24 +10,7 @@
       rel="stylesheet"
     />
     <title>¡Email enviado!</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              ink: "#1d1d1b",
-              paper: "#f5f5f5",
-              gold: "#d9a65f",
-              "gold-ink": "#1d1d1b",
-            },
-            fontFamily: {
-              sans: ["Space Grotesk", "sans-serif"],
-            },
-          },
-        },
-      };
-    </script>
+    <link rel="stylesheet" href="../css/tailwind.css" />
   </head>
   <body
     class="w-full h-screen bg-ink text-white font-sans flex flex-col justify-center items-center p-4 text-center"
@@ -39,7 +22,7 @@
     <a
       id="volver-btn"
       href="https://capture-davinci.vercel.app"
-      class="no-underline w-4/5 max-w-[400px] py-1.5 my-3 border border-paper rounded-md text-paper bg-transparent transition-colors duration-200 hover:text-gold-ink hover:bg-gold hover:border-gold cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+      class="no-underline w-4/5 max-w-100 py-1.5 my-3 border border-paper rounded-md text-paper bg-transparent transition-colors duration-200 hover:text-gold-ink hover:bg-gold hover:border-gold cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
     >
       Volver a la página
     </a>
