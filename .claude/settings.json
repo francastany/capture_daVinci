@@ -19,7 +19,19 @@
       "Bash(npx --yes vercel whoami)",
       "Bash(npx --yes vercel --prod --yes)",
       "Bash(npx --yes vercel --prod --yes --name capture-davinci)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(pnpm install *)",
+      "Bash(pnpm approve-builds *)",
+      "Bash(node scripts/convert-images.js)",
+      "Bash(node scripts/update-html-refs.js)",
+      "Bash(pnpm view *)",
+      "Bash(pnpm add *)",
+      "Bash(pnpm run *)",
+      "Bash(grep -o '\\\\.lg\\\\\\\\:[a-z0-9\\\\\\\\/-]*' css/tailwind.css)",
+      "Bash(grep -o '\\\\.md\\\\\\\\:flex[^{]*{' css/tailwind.css)",
+      "Bash(grep -o '\\\\.sm\\\\\\\\:static[^{]*{' css/tailwind.css)",
+      "Bash(grep -o '.\\\\{0,15\\\\}769px.\\\\{0,80\\\\}' css/tailwind.css)",
+      "Bash(grep -o '.\\\\{0,10\\\\}static[^{;]*' css/tailwind.css)"
     ]
   }
 }

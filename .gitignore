@@ -1,2 +1,4 @@
 Castany.txt
 .vercel
+node_modules
+.vscode

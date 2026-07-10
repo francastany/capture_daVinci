@@ -1,0 +1,21 @@
+{
+  "name": "capture-davinci",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "compress-images": "node scripts/convert-images.js",
+    "build-css": "tailwindcss -i ./css/tailwind.input.css -o ./css/tailwind.css --minify",
+    "watch-css": "tailwindcss -i ./css/tailwind.input.css -o ./css/tailwind.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.2",
+    "sharp": "^0.33.5",
+    "tailwindcss": "^4.3.2"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sharp",
+      "@parcel/watcher"
+    ]
+  }
+}
